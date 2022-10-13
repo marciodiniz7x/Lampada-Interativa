@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lâmpada Interativa</title>
+
+    <link rel="stylesheet" href="/estilo.css">
+
+</head>
+
+<body id="fundo">
+
+    <center>
+        <br>
+        <h1><font size="6">Lâmpada Interativa</font></h1><br>
+
+        <div>
+            <section id="text">
+                <p>Toque no <font color="ff1aff">botão</font> para interagir com a lâmpada!</p>
+                
+            </section>
+            <button onclick="trocar()" id="trocar">Trocar Lâmpada</button>
+        </div>
+
+            <img onclick="contaClique()" id="lamp" src="/images/lamp-desl.png" alt="Lâmpada Ligada"> <br><br>
+        
+        
+            <button id="botao" onclick="ligaDesliga()">Ligar</button><br><br><br>
+        
+            
+      
+        
+        <div>
+            <button style="background-color:#ffd700;" onclick="botao1()" id="normal" class="led"></button>
+            <button style="background-color:#00ffff;" onclick="botao2()" id="aqua" class="led"></button>
+            <button style="background-color:#ff0055;" onclick="botao3()" id="rosa" class="led"></button>
+            <button style="background-color:#bd2de9;" onclick="botao4()" id="roxo" class="led"></button>
+            <button style="background-color:#00ffbf;" onclick="botao5()" id="verde" class="led"></button>
+        </div>
+
+        <p>Selecione a cor do LED</p>
+
+        <script src="/script.js"></script>
+    </center>
+    <br>
+
+</body>
+
+</html>

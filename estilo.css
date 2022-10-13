@@ -1,0 +1,108 @@
+/* |||||||||| TEXTOS ||||||||| */
+h1, p {
+    font-family: 'Pacifico', cursive;
+    color:rgb(249, 255, 240);
+    font-size: 14pt;
+    
+}
+
+/* |||||||||| BOTÕES |||||||||| */
+#botao {
+    width: 120px;
+    height: 60px;
+    font-weight: bold;
+    color:aliceblue;
+    background: #e608e6;
+    transition: 0.4s ease-out;
+    border: none;
+    border-radius: 10px;
+  
+    
+}
+#botao:hover{
+  background:#bf1fff;
+  background-position: 150px;
+  opacity: 1;
+  cursor: pointer;
+  
+}
+
+
+#trocar {
+  color:aliceblue;
+  opacity: 0%;
+  padding: 10px;
+  left: 235px;
+  bottom: 730px;
+  font-weight: bold;
+  background-color:#cc00ff;
+  transition-duration: 0.8s;
+  border: none;
+}
+
+#trocar:hover {
+  color: aliceblue;
+  background-color: #3273ff;
+  cursor: pointer;
+  
+}
+
+
+/* |||||||||| IMAGENS |||||||||| */
+#fundo {
+    
+  background: url(/images/backoff.jpg);
+  
+}
+
+#lamp {
+  block-size: 400px;
+  transition: 0.6s;
+}
+
+#lamp:hover {
+
+  block-size: 420px;
+}
+
+#lamp:active {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  
+  perspective: 1000px;
+}
+
+.led {
+
+    padding: 30px;
+    font-weight: bold;
+    background-color:rgb(255, 255, 255);
+    transition-duration: 0.5s;
+    border: none;
+    border-radius: 8%;
+}
+.led:hover {
+    cursor: pointer;
+    padding: 40px;
+    transition-duration: 0.3s ease-out;
+}
+  
+  @keyframes shake {
+    10%, 90% {
+      
+      transform: translate3d(-3px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(3px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      filter: blur(3px);
+      transform: translate3d(-6px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(6px, 0, 0);
+    }
+  }
